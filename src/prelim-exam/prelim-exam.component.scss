@@ -1,0 +1,86 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Page Style */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Section Wrapper */
+section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* =========================
+   LARGE DESKTOP (Base)
+   ========================= */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  padding: 1.5rem;
+}
+
+.grid-item {
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  background-color: #dedede;
+  color: #333;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+/* =========================
+   DESKTOP ≤ 920px
+   ========================= */
+@media (max-width: 920px) {
+  .grid-container {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .grid-item {
+    background-color: #3b6fa5; /* muted blue */
+    color: #ffffff;
+  }
+}
+
+/* =========================
+   TABLET ≤ 756px
+   ========================= */
+@media (max-width: 756px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid-item {
+    background-color: #4f8f68; /* muted green */
+    color: #ffffff;
+  }
+}
+
+/* =========================
+   MOBILE ≤ 460px
+   ========================= */
+@media (max-width: 460px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    background-color: #b84a4a; /* muted red */
+    color: #ffffff;
+  }
+}
