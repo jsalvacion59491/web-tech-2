@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-students',
   standalone: true,
-  imports: [CommonModule], // ✅ REQUIRED for *ngFor, *ngIf
+  imports: [CommonModule],
   templateUrl: './students.component.html',
   styleUrls: ['./students.component.scss']
 })
@@ -18,10 +18,10 @@ export class StudentsComponent {
   constructor(private router: Router) {}
 
   goToCreateStudent() {
-    this.router.navigate(['/create-student']);
-  }
+  this.router.navigate(['/create-student']);
+}
 
-  deleteStudent(index: number) {
-    this.students.splice(index, 1);
-  }
+deleteStudent(index: number) {
+  this.students.splice(index, 1);
+}
 }
