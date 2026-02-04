@@ -1,0 +1,23 @@
+.header {
+  padding: 1.5rem;
+  background: #eaeaea;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}

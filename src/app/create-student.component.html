@@ -1,0 +1,31 @@
+<header class="header">
+  <h1>Create Student</h1>
+</header>
+
+<main class="form-container">
+  <label>Student ID</label>
+  <input [(ngModel)]="student.id" />
+
+  <label>First Name</label>
+  <input [(ngModel)]="student.firstName" />
+
+  <label>Last Name</label>
+  <input [(ngModel)]="student.lastName" />
+
+  <label>Email</label>
+  <input [(ngModel)]="student.email" />
+
+  <label>Age</label>
+  <input [(ngModel)]="student.age" />
+
+  <label>GPA</label>
+  <input [(ngModel)]="student.gpa" />
+
+  <label>Enrollment Status</label>
+  <input [(ngModel)]="student.status" />
+
+  <div class="buttons">
+    <button (click)="goBack()">Back</button>
+    <button (click)="createStudent()">Create Student</button>
+  </div>
+</main>
